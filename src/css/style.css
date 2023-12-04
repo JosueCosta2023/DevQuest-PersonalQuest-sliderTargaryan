@@ -1,0 +1,106 @@
+.slider{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider .seta{
+    position: absolute;
+    z-index: 2;
+}
+
+.slider .seta img{
+    width: 50px;
+    height: 50px;
+}
+
+.slider .seta.seta-voltar{
+    left: 4%;
+}
+
+.slider .seta.seta-avancar{
+    right: 4%;
+    transform: rotateY(180deg);
+}
+
+.slider .slide{
+    width: 100vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    background-color: red;
+    padding-top: 100px;
+}
+
+.slider .slide.mostrar{
+    opacity: 1;
+}
+
+.slider .slide .conteudo{
+    background-color: #0000008c;
+    width: 590px;
+    max-height: 90vh;
+    margin-left: 180px;
+    padding: 65px 60px;
+    border-radius: 10px;
+}
+
+.slider .slide.aegon{
+    background-image: url('../image/daenerys.png');
+    
+}
+.slider .slide.visenya{
+    background-image: url('../image/daenerys.png');
+}
+.slider .slide.rhaenyra{
+    background-image: url('../image/daenerys.png');
+}
+.slider .slide.baelor{
+    background-image: url('../image/daenerys.png');
+}
+.slider .slide.aegonIV{
+    background-image: url('../image/daenerys.png');
+}
+.slider .slide.daemon{
+    background-image: url('../image/daenerys.png');
+}
+.slider .slide.rhaegar{
+    background-image: url('../image/daenerys.png');
+}
+.slider .slide.daenerys{
+    background-image: url('../image/daenerys.png');
+}
+
+
+.slider .conteudo .titulo{
+    margin-bottom: 20px;
+    font-size: 5rem;
+    font-weight: 400;
+}
+.slider .conteudo .subTitulo{
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.slider .conteudo .texto{
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+    font-style: italic;
+
+}
+.slider .conteudo .saibaMais{
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: red;
+}
+
+.opacidade{
+    opacity: 0;
+    cursor: default;
+}
+
+
