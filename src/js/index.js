@@ -37,12 +37,12 @@
 
     })
 
-
     function esconderSlide() {
         const slideAtual = document.querySelector(".mostrar");
         slideAtual.classList.remove("mostrar")
 
     }
+
     function mostrarSlide(){
 
         imagensSlide[slidePosicao].classList.add("mostrar")
