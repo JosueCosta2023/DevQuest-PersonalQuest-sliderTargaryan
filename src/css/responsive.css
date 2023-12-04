@@ -1,0 +1,63 @@
+@media(max-width: 1024px)
+{
+    .slider .conteudo .texto{
+        font-size: 1.8rem;
+        padding: 0px 30px;
+    }
+
+    .slider .conteudo .titulo{
+        font-size: 4rem;
+    }
+
+    .slider .conteudo .saibaMais{
+        font-size: 2rem;
+        height: 10%;
+        line-height: 50px;
+    }
+
+    .slider .slide{
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 800px) {
+    .slider .conteudo .texto{
+        font-size: 1.6rem;
+        height: 80%;
+        padding-top: 50px;
+        
+    }
+
+    .slider .conteudo .titulo{
+        font-size: 3rem;
+        height: 10%;
+        
+    }
+
+    .slider .conteudo .saibaMais{
+        font-size: 2rem;
+        height: 10%;
+        line-height: 50px;
+    }
+
+    .slider .slide{
+        background-position: left;
+    }
+}
+
+@media(max-width: 600px) {
+    .slider .slide .conteudo{
+        width: 75vw;
+        height: 80vh;
+        background-color: rgba(0, 0, 0, 0.692);
+        margin:0 auto;
+    }
+
+    .slider .conteudo .texto{
+        font-size: 1.8rem;
+        height: 80%;
+        padding-top: 50px;
+        
+    }
+
+}
