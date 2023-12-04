@@ -31,45 +31,51 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     opacity: 0;
     background-color: red;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .slider .slide.mostrar{
     opacity: 1;
 }
 
+
 .slider .slide .conteudo{
-    background-color: #0000008c;
-    width: 590px;
-    max-height: 90vh;
-    margin-left: 180px;
-    padding: 65px 60px;
-    border-radius: 10px;
+    width: 45vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.692);
+    margin-right: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .slider .slide.aegon{
-    background-image: url('../image/daenerys.png');
+    background-image: url('../image/aegon1.png');
     
 }
 .slider .slide.visenya{
-    background-image: url('../image/daenerys.png');
+    background-image: url('../image/visenya.png');
 }
 .slider .slide.rhaenyra{
-    background-image: url('../image/daenerys.png');
+    background-image: url('../image/rhaenyra.png');
 }
 .slider .slide.baelor{
-    background-image: url('../image/daenerys.png');
+    background-image: url('../image/baelor.png');
 }
 .slider .slide.aegonIV{
-    background-image: url('../image/daenerys.png');
+    background-image: url('../image/aegon4.png');
 }
 .slider .slide.daemon{
-    background-image: url('../image/daenerys.png');
+    background-image: url('../image/daemon.png');
 }
 .slider .slide.rhaegar{
-    background-image: url('../image/daenerys.png');
+    background-image: url('../image/rhaegar.png');
 }
 .slider .slide.daenerys{
     background-image: url('../image/daenerys.png');
@@ -77,30 +83,99 @@
 
 
 .slider .conteudo .titulo{
-    margin-bottom: 20px;
+    padding: 20px;
     font-size: 5rem;
     font-weight: 400;
-}
-.slider .conteudo .subTitulo{
-    margin-bottom: 50px;
-    font-size: 2rem;
+    height: 20%;
+
 }
 
 .slider .conteudo .texto{
-    margin-bottom: 50px;
-    font-size: 1.8rem;
+    padding-bottom: 30px;
+    font-size: 2.3rem;
     font-style: italic;
-
+    height: 60%;
+    text-align: center;
+    padding: 0px 10px;
 }
 .slider .conteudo .saibaMais{
     font-size: 3rem;
     font-weight: 700;
-    background-color: red;
+    height: 20%;
+    text-align: center;
+    line-height: 100px;
+    display: block;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:  20px;
+    
 }
 
 .opacidade{
     opacity: 0;
     cursor: default;
+}
+
+@media(max-width: 1024px)
+{
+    .slider .conteudo .texto{
+        font-size: 1.8rem;
+    }
+
+    .slider .conteudo .titulo{
+        font-size: 4rem;
+    }
+
+    .slider .conteudo .saibaMais{
+        font-size: 2rem;
+        height: 10%;
+        line-height: 50px;
+    }
+
+    .slider .slide{
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 800px) {
+    .slider .conteudo .texto{
+        font-size: 1.6rem;
+        height: 80%;
+        padding-top: 50px;
+        
+    }
+
+    .slider .conteudo .titulo{
+        font-size: 3rem;
+        height: 10%;
+        
+    }
+
+    .slider .conteudo .saibaMais{
+        font-size: 2rem;
+        height: 10%;
+        line-height: 50px;
+    }
+
+    .slider .slide{
+        background-position: left;
+    }
+}
+
+@media(max-width: 600px) {
+    .slider .slide .conteudo{
+        width: 75vw;
+        height: 80vh;
+        background-color: rgba(0, 0, 0, 0.692);
+        margin:0 auto;
+    }
+
+    .slider .conteudo .texto{
+        font-size: 1.5rem;
+        height: 80%;
+        padding-top: 50px;
+        
+    }
+
 }
 
 
